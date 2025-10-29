@@ -569,6 +569,12 @@ def health():
         }
     })
 
+@app.route('/')
+def home():
+    return "🚀 StudentHelpless Backend is Live — try /health or POST /query"
+
+
+
 # ============= MAIN =============
 if __name__ == '__main__':
     
