@@ -571,7 +571,7 @@ def health():
 
 @app.route('/')
 def home():
-    return "🚀 StudentHelpless Backend is Live — try /health or POST /query"
+    return render_template('index.html')
 
 
 
