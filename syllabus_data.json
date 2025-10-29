@@ -1,0 +1,34 @@
+[
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1 \nIntroduction to Software Project Management (SPM): Definition of a Software Project (SP), SP Vs. other types of projects activities covered by SPM, categorizing SPs, project as a system, management control, requirement specification, information and control in organization. Stepwise Project planning: Introduction, selecting a project, identifying project scope and objectives, identifying project infrastructure, analyzing project characteristics, identifying project products and activities, estimate efforts each activity, identifying activity risk, allocate resources, review/ publicize plan. \nUNIT 2 \nProject Evaluation & Estimation: Cost benefit analysis, cash flow forecasting, cost benefit evaluation techniques, risk evaluation. Selection of an appropriate project report; Choosing technologies, choice of process model, structured methods, rapid application development, waterfall, V-process model, spiral models, Prototyping, delivery. Albrecht function point analysis. Activity planning & Risk Management: Objectives of activity planning, project schedule, projects and activities, sequencing and scheduling activities, network planning model, representation of lagged activities, adding the time dimension, backward and forward pass, identifying critical path, activity throat, shortening project, precedence networks. Risk Management: Introduction, the nature of risk, managing risk, risk identification, risk analysis, reducing the risks, evaluating risks to the schedule, calculating the z values. \nUNIT 3 \nResource allocation & monitoring the control: Introduction, the nature of resources, identifying resource requirements, scheduling resources creating critical paths, counting the cost, being specific, publishing the resource schedule, cost schedules, the scheduling sequence. Monitoring the control: Introduction, creating the frame work, collecting the data, visualizing progress, cost monitoring, earned value, prioritizing monitoring, getting the project back to target, change control. Managing contracts and people: Introduction, types of contracts, stages in contract, placement, typical terms of a contract, contract management, acceptance, Managing people and organizing terms: Introduction, understanding behaviour, organizational behaviour: a back ground, selecting the right person for the job, instruction in the best methods, motivation, working in groups, becoming a team, decision making, leadership, organizational structures. \nUNIT 4 \nSoftware quality: Introduction, the place of software quality in project planning, the importance of software quality, defining software quality, ISO 9126, Practical software quality measures, product versus process quality management, external standards, techniques to help enhance software quality."
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1\nOverview of biological neurons: Structure of biological neuron, neurobiological analogy, Biological neuron equivalencies to artificial neuron model, Evolution of neural network.\n\nActivation Functions: Threshold functions, Signum function, Sigmoid function, Tan-hyperbolic function, Stochastic function, Ramp function, Linear function, Identity function.\n\nANN Architecture: Feed forward network, Feed backward network, single and multilayer network, fully recurrent network,\n\nUNIT 2\nMcCulloch and Pits Neural Network (MCP Model): Architecture, Solution of AND, OR function using MCP model, Hebb Model: Architecture, training and testing, Hebb network for AND function.\nPerceptron Network: Architecture, training, Testing, single and multi-output model, Perceptron for AND function. Linear function, application of linear model, linear separability, solution of OR function using linear separability model.\n\nUNIT 3\nLearning: Supervised, Unsupervised, reinforcement learning, Gradient Descent algorithm, generalized delta learning rule, Habbian learning, Competitive learning, Backpropagation Network: Architecture, training and testing,\n\nUNIT 4\nAssociative memory: Auto associative and Hetero associative memory and their architecture, training (insertion) and testing (Retrieval) algorithm using Hebb rule and Outer Product rule. Storage capacity, Testing of associative memory for missing and mistaken data, Bidirectional memory"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT- I\nIntroduction: Plain text and cipher text, substitution techniques, transposition techniques, encryption and decryption, symmetric and asymmetric key cryptography.\n\nUNIT- II\nSymmetric Key Algorithms:- Introduction, algorithms types and modes, DES, AES.\nAsymmetric Key Algorithms: Introduction, history of asymmetric key cryptography, RSA symmetric and asymmetric key cryptography together, Digital signature.\n\nUNIT- III\nInternet Security Protocols: Basic concepts, Secure Socket Layer (SSL), Transport Layer Security (TLS), Secure Hyper Text Transfer protocol (SHTTP), Time Stamping Protocol (TSP), Secure Electronic Transaction (SET), SSL versus SET, Electronic Money, Email Security.\n\nUNIT- IV\nUser Authentication And Kerberos:- Introduction, Authentication basics, Passwords, authentication tokens, certificate based authentication, biometric based authentication, Kerberos, key distribution center (KDC), Security handshake pitfalls, single Sign on(SSO) approach."
+  },
+  {
+    "subject_id": 4,
+    "subject_name": "English For Professionals",
+    "subject_code": "HSMC-10G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1\nCommunication Process Types and Levels, Scopes and significance, Technical and Tools of Effective communication\n\nUNIT 2\nSpeaking files and Personality Development Oral Presentation, Body Language, Voice Modulation, Negotiation, Group Discussion, Interview techniques\n\nUNIT 3\nAdvanced Technical Writing Job Application, CV writing, Business Letters, Memos, Minutes, Notices, Report Writing and structure, Blog writing.\n\nUNIT 4\nCommunication and Media Recent Developments in Media, Context of Communication"
+  }
+]

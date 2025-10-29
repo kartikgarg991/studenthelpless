@@ -1,0 +1,187 @@
+[
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1 \nIntroduction to Software Project Management (SPM): Definition of a Software Project (SP), SP Vs. other types of projects activities covered by SPM, categorizing SPs, project as a system, management control, requirement specification, information and control in organization. Stepwise Project planning: Introduction, selecting a project, identifying project scope and objectives, identifying project infrastructure, analyzing project characteristics, identifying project products and activities, estimate efforts each activity, identifying activity risk, allocate resources, review/ publicize plan. \nUNIT 2 \nProject Evaluation & Estimation: Cost benefit analysis, cash flow forecasting, cost benefit evaluation techniques, risk evaluation. Selection of an appropriate project report; Choosing technologies, choice of process model, structured methods, rapid application development, waterfall, V-process model, spiral models, Prototyping, delivery. Albrecht function point analysis. Activity planning & Risk Management: Objectives of activity planning, project schedule, projects and activities, sequencing and scheduling activities, network planning model, representation of lagged activities, adding the time dimension, backward and forward pass, identifying critical path, activity throat, shortening project, precedence networks. Risk Management: Introduction, the nature of risk, managing risk, risk identification, risk analysis, reducing the risks, evaluating risks to the schedule, calculating the z values. \nUNIT 3 \nResource allocation & monitoring the control: Introduction, the nature of resources, identifying resource requirements, scheduling resources creating critical paths, counting the cost, being specific, publishing the resource schedule, cost schedules, the scheduling sequence. Monitoring the control: Introduction, creating the frame work, collecting the data, visualizing progress, cost monitoring, earned value, prioritizing monitoring, getting the project back to target, change control. Managing contracts and people: Introduction, types of contracts, stages in contract, placement, typical terms of a contract, contract management, acceptance, Managing people and organizing terms: Introduction, understanding behaviour, organizational behaviour: a back ground, selecting the right person for the job, instruction in the best methods, motivation, working in groups, becoming a team, decision making, leadership, organizational structures. \nUNIT 4 \nSoftware quality: Introduction, the place of software quality in project planning, the importance of software quality, defining software quality, ISO 9126, Practical software quality measures, product versus process quality management, external standards, techniques to help enhance software quality."
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1\nOverview of biological neurons: Structure of biological neuron, neurobiological analogy, Biological neuron equivalencies to artificial neuron model, Evolution of neural network.\n\nActivation Functions: Threshold functions, Signum function, Sigmoid function, Tan-hyperbolic function, Stochastic function, Ramp function, Linear function, Identity function.\n\nANN Architecture: Feed forward network, Feed backward network, single and multilayer network, fully recurrent network,\n\nUNIT 2\nMcCulloch and Pits Neural Network (MCP Model): Architecture, Solution of AND, OR function using MCP model, Hebb Model: Architecture, training and testing, Hebb network for AND function.\nPerceptron Network: Architecture, training, Testing, single and multi-output model, Perceptron for AND function. Linear function, application of linear model, linear separability, solution of OR function using linear separability model.\n\nUNIT 3\nLearning: Supervised, Unsupervised, reinforcement learning, Gradient Descent algorithm, generalized delta learning rule, Habbian learning, Competitive learning, Backpropagation Network: Architecture, training and testing,\n\nUNIT 4\nAssociative memory: Auto associative and Hetero associative memory and their architecture, training (insertion) and testing (Retrieval) algorithm using Hebb rule and Outer Product rule. Storage capacity, Testing of associative memory for missing and mistaken data, Bidirectional memory"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT- I\nIntroduction: Plain text and cipher text, substitution techniques, transposition techniques, encryption and decryption, symmetric and asymmetric key cryptography.\n\nUNIT- II\nSymmetric Key Algorithms:- Introduction, algorithms types and modes, DES, AES.\nAsymmetric Key Algorithms: Introduction, history of asymmetric key cryptography, RSA symmetric and asymmetric key cryptography together, Digital signature.\n\nUNIT- III\nInternet Security Protocols: Basic concepts, Secure Socket Layer (SSL), Transport Layer Security (TLS), Secure Hyper Text Transfer protocol (SHTTP), Time Stamping Protocol (TSP), Secure Electronic Transaction (SET), SSL versus SET, Electronic Money, Email Security.\n\nUNIT- IV\nUser Authentication And Kerberos:- Introduction, Authentication basics, Passwords, authentication tokens, certificate based authentication, biometric based authentication, Kerberos, key distribution center (KDC), Security handshake pitfalls, single Sign on(SSO) approach."
+  },
+  {
+    "subject_id": 4,
+    "subject_name": "English For Professionals",
+    "subject_code": "HSMC-10G",
+    "branch": "CSE",
+    "semester": 7,
+    "full_syllabus": "UNIT 1\nCommunication Process Types and Levels, Scopes and significance, Technical and Tools of Effective communication\n\nUNIT 2\nSpeaking files and Personality Development Oral Presentation, Body Language, Voice Modulation, Negotiation, Group Discussion, Interview techniques\n\nUNIT 3\nAdvanced Technical Writing Job Application, CV writing, Business Letters, Memos, Minutes, Notices, Report Writing and structure, Blog writing.\n\nUNIT 4\nCommunication and Media Recent Developments in Media, Context of Communication"
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2024,
+    "full_pyq_text": "B.Tech. 7th Semester (CSE) (G-Scheme) Examination, December-2024 NEURAL NETWORKS Paper - PCC-CSE-401G Time allowed: 3 hours] [Maximum marks : 75 Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each section. Question No. 1 is compulsory. All questions carry equal marks. 1. Explain the following: 6×2.5=15 (a) Role of Dendrites and Axons in a Biological Neuron (b) Applications of Neural Network (c) Linear Separability (d) Supervised Learning (e) Generalized Delta Learning rule (f) Hetro Associative Memory Section-A 2. Describe the structure of a biological neuron in detail and explain how its components contribute to signal processing and transmission. 15 3. What are activation functions in artificial neural networks? Explain their role and importance with examples of threshold, sigmoid and tanh functions. 15 Section-B 4. Describe the McCulloch-Pitts (MCP) model in detan. Discuss its architecture, working and the solution for OR functions. 15 5. Illustrate the concept of linear separability with the solution of the OR function. 15 Section-C 6. Describe the architecture of Backpropagation network. Discuss the training and testing processes in detail. 15 7. Explain competitive learning. Discuss its applications and how it differs from conventional learning methods. 15 Section-D 8. What is Associative Memory? How does associative memory handle errors in data, such as missing or mistaken inputs? Discuss the mechanisms with examples. 15 9. Explain Hebb model and implement logic 'AND' function using Hebb network. 15"
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "CSE-407-F",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2021,
+    "full_pyq_text": "B.Tech. (CSE) 7th Semester Examination, March-2021 NEURAL NETWORKS Paper-CSE-407-F Time: Three Hours] [Maximum Marks: 100 Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note:- Question No. 1 is compulsory. Attempt any five questions by selecting at least one question from each Section. 1. Explain the following: (a) Perceptron learning rule (b) Weight initialization (c) Learning factors (d) Recall mode (e) Correction learning rule 5×4=20 Section-A 2. (a) Explain Biological Neurons. Differentiate ANN and biological neurons with various learning factors. (b) Explain feed forward and feedback networks with their learning rules. 10,10 3. (a) Explain MC Culloch-Pitts neuron to design logic networks of AND logic function with example. (b) Write short note on Widrow-Hoff learning rule. 12,8 Section-B 4. (a) Explain single layer discrete perceptron training algorithm for linearly separable classification. (b) Explain multilayer perceptron model for linearly non-separable pattern classification. 10,10 5. (a) Explain error back-propagation training algorithm. (b) Explain Delta learning rule for multi- perceptron layer. 10,10 Section-C 6. Explain the various architecture of Hopfield network with training. How learning occurs in Hopfield network ? 20 7. (a) Explain the associative memory with its various types in detail. (b) Explain the encoding and decoding procedure in associative memory. 10,10 Section-D 8. Write short notes on the following: (a) Unsupervised learning of clusters (b) Winner-take-all learning with algorithm 10×2=20 9. What is Competitive Learning ? How is it different from conventional learning? Discuss its significance and usefulness in neural networks. 20"
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B.Tech. (CSE) 7th Semester (G-Scheme) Examination, December-2022 NEURAL NETWORKS Paper - PCC-CSE-401-G [Maximum marks: 75 Time allowed: 3 hours] Note: All questions carry equal marks. Question no. 1 is compulsory. In addition to the compulsory question, student will have to attempt four more questions selecting one question from each unit. Compulsory Question : 1. (a) Discuss evolution of neural network. (b) Explain the Competitive Learning. (c) Obtain the output of neuron Y neuron having three input x1=1, x2=2, and x3=3 and weight are w1=1, w2=1, w3=2 by using Threshold and Sigmodial activation functions. (d) Discuss the concept of Storage capacity in Associative Memory. Unit - I 2. Explain the component of a Biological Neuron. Also focus on Biological neuron equivalencies to artificial neuron model. 3. What is Activation Function? Why it is used? Give different types of activation function in detail. Unit - II 4. What is perceptron? Also realize if for OR function for bipolar data. 5. Explain Linear Separability Concept by taking a suitable example, also classify the output of OR function using it. Unit - III 6. Derive Gradient Decent algorithm and compare it with generalized delta learning rule. 7. What is Learning? Explain its different types. Unit - IV 8. Store the vector (1 1 -1 -1) in Auto Associative Network, And (a) Find the Weight Matrix (b) Test the net with input vector (c) Test with one mistake in input (d) Test with one missing in input (e) Test with two missing in input (f) Test with two mistake in input 9. What is Associative Memory? Explain Auto Associative Memory with its architecture, training (insertion) and testing (Retreival) Algorithm."
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Examination – February, 2022 NEURAL NETWORKS Paper: PCC-CSE-401-G [Maximum Marks: 75 Time: Three Hours ] Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each Section. Question No. 1 is compulsory. All questions carry equal marks. 1. Explain the following : (a) Hebbian learning. (b) Reinforcement learning. (c) Feedforward vs feedback Networks. 5×3=15 (d) What is the need of Activation Functions in ANN? (e) Explain term Linear Separability classification. SECTION -A 2. What are biological neurons? How they resemble artificial neuron models. Compare and contrast biological neurons with Artificial Neural Networks. 15 3. (a) Explain various architecture models of ANN with their corresponding advantages and disadvantages. 8 (b) What are Activation functions and why we need these functions in ANN? Also write significance of any three non-linear functions used in ANN. 7 SECTION -B 4. Discuss architecture of McCulloch Pitts Neural Network model in detail. Also explain McCulloch Pitts model to design logic networks of AND and OR logic function. 15 5. Explain perceptron network training architecture in detail. Also, write implementation of AND function using perceptron learning. 15 SECTION-C 6. (a) Differentiate between supervised and unsupervised learning. 8 (b) Explain Gradient Descent Algorithm in detail. 7 7. (a) Explain Error Back propagation algorithm in detail. 6 (b) Write short note on Delta Learning rule. 9 SECTION - D 8. (a) Explain different type of Associative memories in detail with example. 7 (b) Write storage and Retrieval algorithm for associative memory. 8 9. Explain bidirectional associative memory architecture, its association encoding and decoding in detail. 15"
+  },
+  {
+    "subject_id": 2,
+    "subject_name": "Neural Networks",
+    "subject_code": "PCC-CSE-401-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2023,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Examination – May, 2023 NEURAL NETWORKS Paper: PCC-CSE-401-G [Maximum Marks: 75 Time: Three hours ] Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each Section. Question No. 1 is compulsory. All questions carry equal marks. 1. Explain the following: 2.5 × 6 = 15 (a) Application of Neural Networks (b) Activation Function (c) Describe Learning Factors (d) Structure of Biological Neuron (e) Auto Associative Memory (f) Hetro Associative Memory SECTION – A 2. Explain architecture of artificial Neural Network. Explain its three basic types of Neuron connection architecture. 15 3. What is associative memory ? Explain its various types in detail with suitable example. 15 SECTION – B 4. What do you mean by McCulloch Pitts Model ? Explain this model by using AND function. 15 5. Explain the following : (a) Gradient Descent Algorithm (b) Linear Separability 15 SECTION – C 6. Explain Single Layer architecture of Perceptron Network and implement AND Function using Perceptron Network. 15 7. Describe the following : (a) Supervised Learning (b) Unsupervised Learning (c) Reinforcement Learning 15 SECTION – D 8. Explain Hebb Model in detail 15 9. What is Competitive Learning ? How it is different from conventional Learning ? Explain its significance and usefulness in Neural Network. 15"
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G/PEC-IT-407-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2024,
+    "full_pyq_text": "B.Tech. (CSE) 7th Semester, Professional Elective-IV (G-Scheme) Examination, December-2024 SOFTWARE PROJECT MANAGEMENT Paper-PEC-CSE-403-G/PEC-IT-407-G Time allowed: 3 hours] [Maximum marks: 75 Note: Attempt five questions in total, selecting one question from each section. Question No. 1 is compulsory. All questions carry equal marks. 1. (a) Who is Software Project Manager? (b) What is Risk? (c) What is SDLC? (d) What is the Role of Software quality? (e) What is Cost Monitoring? (f) What is ISO 9126. 6×2.5=15 Section-A 2. What is Software Project Management? Why is it so Important? Discuss the activities covered by SPM with activity flow diagram. 15 3. Explain the stepwise planning activities of a good software project manager. 15 Section-B 4. What is software development life cycle? Explain spiral model in detail? 15 5. What is Risk in a Software Project? How Project manager will do the Risk management? Discuss the techniques used for risk management? 15 Section-C 6. Describe resource allocation. Also discuss the nature of resources and requirements in detail? 15 7. What is contract? Explain types of contracts? Discuss the stages of contract. 15 Section-D 8. What is Software Quality? How we can enhance the software quality? 15 9. Explain the following: 2×7.5=15 (a) Product versus Process Quality Management. (b) Role of Software Quality in Project Planning."
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G/PEC-IT-407-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B.Tech. (CSE)- Professional Elective - IV 7th Semester (G - Scheme) Examination, December-2022 SOFTWARE PROJECT MANAGEMENT Paper - PEC-CSE-403-G/PEC-IT-407-G Time allowed: 3 hours] [Maximum marks: 75 Note: Attempt five questions in all, selecting one question from each unit. Question no. 1 is compulsory. All questions carry equal marks. 1. (a) Who is Software Project Manager? (b) Explain about stakeholders. (c) Explain Requirement specification. (d) Risk management by Project Manager. (e) Explain the place of quality in project planning. (f) What is review in Software Project management? 15 Unit - I 2. What do you mean by Software Project? Discuss different type of activities covered by software project management? 15 3. Explain the stepwise Project Planning of Software Project Manager during software development? 15 Unit - II 4. What is Risk management? How it is identified, analyzed, reduced and managed? Explain briefly. 15 5. Explain the software Activity Planning by Software Project Manager. 15 Unit - III 6. Discuss different type of contract, its stages and different terms related to contract. Explain the concept of contract management. 15 7. (a) Resource allocation in Software Project management (b) Cost monitoring 15 Unit - IV 8. Explain the importance of software quality during software development and explain ISO 9126 in brief. 15 9. (a) Discuss different software quality measures. (b) Techniques to enhance software quality. 15"
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G/PEC-IT-407-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B. Tech. (CSE) Professional Elective-IV 7th Semester G-Scheme Examination, July-2022 SOFTWARE PROJECT MANAGEMENT Paper-PEC-CSE-403-G/PEC-IT-407-G Time allowed: 3 hours] [Maximum marks : 75 Note: Attempt five questions in all, selecting at least one question from each section. Question No. 1 is compulsory. All questions carry equal marks. 1. (a) Differentiate between product and process. (b) How Albrecht function point analysis is done ? (c) Give the significance of cost-benefit analysis. 3×5=15 Section-A 2. Explain software projects. What constitutes a software project ? Also explain different characteristics of a software project. 15 3. Explain the steps involved in project planning in detail with a neat diagram. 15 Section-B 4. What is the difference between forward pass and backward pass ? Explain with the help of an example. 15 5. What is a risk? Discuss the various risks in projects. How the risk management plans are derived and implemented. 15 Section-C 6. What are various types of contracts ? Discuss various stages in contract placement. Explain contract management with the help of example. 15 7. Explain the different nature of resources. How do you identify the resource requirements ? 15 Section-D 8. What is software quality? What are different parameters for measuring the quality of software project ? 15 9. Explain the following: (i) ISO9126 (ii) Product vs Process quality management 15"
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-401-G/PEC-IT-407-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2023,
+    "full_pyq_text": "B. Tech. (CSE)- Professional (Elective-IV) 7th Semester Examination, November-2023 SOFTWARE PROJECT MANAGEMENT Paper-PEC-CSE-401-G/PEC-IT-407-G Time allowed: 3 hours] [Maximum marks: 75 Note: Question No. 1 is compulsory. Attempt five questions in total selecting one question from each unit. 1. Write short note on:- 6×2.5=15 (a) Categorizing software projects (b) Cash flow forecasting (c) Sequencing and scheduling of activities (d) The nature of resources (e) Maslow's hierarchy of needs (f) Capability Maturity Models (CMM) Unit-I 2. (a) Explain certain characteristics which make software projects different from other types of projects. 8 (b) Explain the terms used to describe well-defined objectives. 7 3. Outline and explain the step wise planning activities in details. 15 Unit-II 4. (a) Explain Spiral Model of SDLC. 8 (b) What are lagged activities? How to representation of lagged activities in precedence network? 7 5. Evaluate risk to the schedule by applying PERT technique with suitable example. 15 Unit-III 6. Explain Cost scheduling and the scheduling sequence in SPM. 15 7. Explain different methods of visualizing progress while monitoring the project. 15 Unit-IV 8. Explain different techniques to help enhance software quality. 15 9. Explain the following: (a) The importance of software quality 7 (b) ISO 15504 Process assessment 8"
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "PEC-CSE-403-G/PEC-IT-407-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2023,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Professional Elective-IV Examination – May, 2023 SOFTWARE PROJECT MANAGEMENT Paper: PEC-CSE-403-G/PEC-IT-407-G Time: Three hours ] [Maximum Marks: 75 Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each Unit. Question No. 1 is compulsory. All questions carries equal marks. 1. Write short note on: (a) Activities involves in Management (b) Activity Float (c) Albrecht function point analysis (d) Herzberg's two factor theory on motivation (e) Change Control Procedures (f) Importance of software quality 2.5×6=15 UNIT - I 2. Outline and explain the step wise planning activities in details. 15 3. (a) Explain different ways of categorizing software projects. 8 (b) Explain the project control cycle. 7 UNIT - II 4. Explain different cost benefit evaluation techniques with examples. 15 5. (a) Explain probability impact matrix for Risk. 8 (b) What is Risk reduction and Risk mitigation ? 7 UNIT - III 6. Explain earned value analysis with the help of earned value tracking chart. 15 7. (a) Explain different stages in contract placement. 8 (b) Explain how slip chart helps in monitoring a project. 7 UNIT - IV 8. Explain ISO 9126 in detail. 15 9. Write short notes on : (a) Product versus process quality management. 7 (b) Capability Maturity Models (CMM) 8"
+  },
+  {
+    "subject_id": 1,
+    "subject_name": "Software Project Management",
+    "subject_code": "CSE-403-F",
+    "branch": "CS & IT",
+    "semester": 7,
+    "exam_year": 2021,
+    "full_pyq_text": "B.Tech. (CS & IT) 7th Semester Examination, March-2021 SOFTWARE PROJECT MANAGEMENT Paper-CSE-403-F Time: Three Hours] [Maximum Marks: 100 Note:- Attempt five question in all. Q. No. 1 is compulsory. Attempt one question from each Section. All questions carry equal marks. (Compulsory Question) 1. (a) What is requirement specification? Explain. (b) What are the objectives of activities planning? 2. Define the term software project. How is it different from other project ? Describe the various activities involved in the software project management. 3. Write a short note on software project planning discussing its all aspects. Section-B 4. Write short notes on the following: (a) Albrecht function point analysis (b) Rapid application development 5. What is Risk Management ? How is it identified, analysed, reduced and managed ? Explain briefly. Section-C 6. Discuss the different types of contract, its stages and typical terms of a contract. Also describe the contract management. 7. (a) Resource Allocation and its importance. (b) Cost Monitoring and its role in project management. Section-D 8. (a) Explain Product V/s Process quality management. (b) What is earned value analysis ? 9. (a) Importance of software quality. (b) ISO 9126 standard. 10. Write short notes on: (a) Capability Maturity Model (CMM) (b) Personnel selection and job description."
+  },
+  {
+    "subject_id": 4,
+    "subject_name": "English For Professionals",
+    "subject_code": "HSMC - 10G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B.Tec. (CSE) 7th Semester, G. Scheme (Open Elective-I) Examination, December-2022 ENGLISH FOR PROFESSIONALS Paper-HSMC - 10G Time allowed: 3 hours] [Maximum marks: 75 Note: Attempt all questions. 1. Write down the short notes on these following: 2.5 each (a) Body language (b) Voice Modulation (c) Notices (d) Memo (e) Report writing (f) Blog writing 2. What are barriers to communication? Do you remember any case of poor communication? Specify what went wrong in the case that resulted in poor communication? 15 or What does the term 'Communication' imply? Why is effective communication vital in today's world? 3. What do you mean by a group discussion? Why are these so important for university students and professionals? 15 or How far is body language important to succeed in interview? Discuss in detail. 4. What is CV and how does a well written CV help in negotiating salary? 15 or Describe the features of typical business letter. 5. What is the different levels of communication? Explain it with examples. 15 or What are the 7C's in Communication? How we improve our communication with these 7C's."
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2024,
+    "full_pyq_text": "B.Tech. (CSE) (Professional Elective-V) 7th Semester G-Scheme Examination, December-2024 NETWORK SECURITY AND CRYPTOGRAPHY Paper-PEC-CSE-411-G Time allowed: 3 hours] [Maximum marks: 75 Note: Question No. 1 is compulsory. Attempt four more questions selecting one question from each unit. All questions carry equal marks. 1. Compulsory question : (i) Define plain-text and cipher-text. How are they related in encryption? (ii) What is the difference between substitution and transposition techniques in cryptography? (iii) What is the primary purpose of the RSA algorithm in encryption? (iv) How are digital signatures used in cryptographic communication? (v) What is the main function of Secure Socket Layer (SSL) in internet security? (vi) How does Transport Layer Security (TLS) enhance the security of data transmissions? (vii) Define single sign-on (SSO). How is it used in enterprise systems? (viii) What are authentication tokens and how are they used in secure systems? Unit-I 2. Describe the process of symmetric key cryptography and explain the role of the encryption and decryption keys in the process. 3. Discuss the challenges and benefits of asymmetric key cryptography over symmetric key cryptography. Provide real-world examples to illustrate their usage. Unit-II 4. Explain the Data Encryption Standard (DES) in detail. How does its block structure and key size affect its security? 5. Describe the Advanced Encryption Standard (AES) and its significance in modern cryptography. Discuss how its modes of operation ensure secure encryption. Unit-III 6. Explain the concept of Secure Electronic Transactions (SET) and compare it with SSL. What are the advantages and disadvantages of each in online payment systems? 7. Discuss the concept of electronic money. How do security protocols like SSL and SET play a role in safeguarding digital transactions? Unit-VI 8. Describe the single sign-on (SSO) approach and its advantages in enterprise security. What are some common pitfalls in its implementation? 9. Compare and contrast certificate-based authentication with token-based authentication. What are the use cases for each method?"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B.Tech. (CSE) Professional Elective-V, 7th Semester (G-Scheme) Examination, December-2022 NETWORK SECURITY AND CRYPTOGRAPHY Paper-PEC-CSE-411-G Time allowed : 3 hours] [Maximum marks : 75 Note: Attempt five questions in all, selecting at least one question from each section. Question no. 1 is compulsory. All question carry equal marks. 1. Explain the following: 6×2.5=15 (a) Product cipher (b) Homophonic Substitution Cipher (c) Cipher Block Chaining (d) DES Design Principles (e) Email Security (f) Kerberos Section-A 2. (a) What are the elements of cryptographic operation? Explain in detail with the help of a diagram. 10 (b) Explain Polyalphabetic Substitutioin Cipher. Explain using suitable examples. 5 3. (a) Explain Transposition techniques in details with suitable examples. 8 (b) What is the problem of key distribution in symmetric key cryptography? 7 Section-B 4. (a) Explain overview of the DES Encryption Algorithm with the help of a diagram. (b) What are Limitations of various DES Modes 2×7.5=15 5. Explain the subkey generation in the Blowfish algorithm. 15 Section-C 6. (a) Why is the SSL Layer positioned between the application layer and transport layer? (b) What is the purpose of the SSL alert protocol? 2×7.5=15 7. (a) What is the significance of the time stamping protocol? 8 (b) How does SET protect payment information from the merchant? 7 Section-D 8. Explain the following: (a) Certificate base authentication 8 (b) Biometric base authentication 7 9. What is single sign on (SSO) approach? Explain in detail. 15"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2022,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Professional Elective-V Examination – February, 2022 NETWORK SECURITY & CRYPTOGRAPHY Paper: PEC-CSE-411-G Time: Three Hours ] [Maximum Marks: 75 Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each Unit. Question Number 1 is compulsory. All questions carry equal marks. 1. Write short notes on the following: 2.5×6=15 (a) What is E-mail Security ? (b) Explain rainforce technique with example. (c) What do you mean by Security Handshake pitfalls? (d) What do you understand by Feiestel Cipher? (e) What is Avalanche effect? (f) What is the role of session key in public key schemes ? UNIT - 1 2. (a) Discuss any four substitution technique and list their merits and demerits. 10 (b) Explain in detail transposition techniques. 5 3. (a) Briefly explain the design principles of block cipher. 8 (b) Explain Fermat and Euler's theorem. 7 UNIT - II 4. (a) Perform decryption and encryption using RSA algorithm with p=3, q=11, e=7 and N=5. 7 (b) Mention the strengths and weakness of DES algorithm. 8 5. (a) Explain the generation Subkey and S-box from the given 32-bit key by Blowfish. 8 (b) Explain Digital Signature in detail. 7 UNIT - III 6. (a) Discuss clearly Secure Socket Layer (SSL) and the steps involved in SSL required protocol. 7 (b) Explain the architecture of IP security. 8 7. (a) What is Electronic Money? How is it useful? 7 (b) Explain secure electronic transaction with neat diagram. 8 UNIT - IV 8. (a) What is Kerberoes ? Explain how it provides authenticated service? 8 (b) What are honey pots ? Explain KDC in detail. 7 9. Write short notes on: (a) Certificate based authentication (b) Security handshake pitfalls 7"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-411-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2023,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Professional Elective-V Examination – May, 2023 NETWORK SECURITY AND CRYPTOGRAPHY Paper: PEC-CSE-411-G Time: Three hours] [Maximum Marks: 75 Before answering the questions, candidates should ensure that they have been supplied the correct and complete question paper. No complaint in this regard, will be entertained after examination. Note: Attempt five questions in all, selecting one question from each Section. Question No. 1 is compulsory. 1. Explain the following: 2.5×6=15 (a) Cryptanalyst (b) Rail-Fence Technique (c) Electronic Codebook Book (d) DES Weak Keys (e) Electronic Money (f) Biometric authentication SECTION -A 2. (a) Explain substitution techniques in details with suitable examples. 10 (b) What are the two primary ways in which a plain text message be codified to obtain cipher text? 5 3. (a) Define encryption and decryption. Explain using suitable examples. 8 (b) Explain Diffie-Hellman Key-Exchange /Agreement Algorithm. 7 SECTION -B 4. (a) How does the one-time initialization step work in AES? Explain the steps in the various rounds in AES. 7.5 (b) Give advantages and disadvantages of different DES Modes. 7.5 5. Explain the subkey generation in the Blowfish algorithm. 15 SECTION-C 6. (a) Explain the SSL handshake protocol. 7.5 (b) How is SHTTP different from SSL? 7.5 7. (a) Outline the broad level steps in SET. 8 (b) How is 3-D Secure different from SET? 7 SECTION - D 8. (a) What are the problems and their solutions Related to Smart Card Technology. 8 (b) What is Kerberos ? The Internet is an insecure place, justify. 7 9. Explain the following: 7.5 × 2 = 15 (a) Key Distribution Center( KDC) (b) Security handshake pitfalls"
+  },
+  {
+    "subject_id": 3,
+    "subject_name": "Network Security And Cryptography",
+    "subject_code": "PEC-CSE-4U-G",
+    "branch": "CSE",
+    "semester": 7,
+    "exam_year": 2023,
+    "full_pyq_text": "B. Tech. 7th Semester (CSE) Professional Elective-V (G-Scheme) Examination, November-2023 NETWORK SECURITY & CRYPTOGRAPHY Paper-PEC-CSE-4U-G Time allowed : 3 hours] [Maximum marks : 75 Note: Question no. 1 is compulsory. Answer any one question from each of the remaining four units. All questions carry equal marks. 1. Briefly explain the following: 6×2.5=15 (i) Cipher Text (ii) Drawbacks of symmetric cryptography (iii) E-mail Security (iv) Single Sign-on approach (v) CIA triad (vi) Certificate based authentication Unit-I 2. Explain the basic concepts of Encryption and Decryption techniques with suitable examples. 15 3. Describe substitution ciphers. Also define how their working is different than the transposition ciphers. 15 Unit-II 4. What do you mean by Digital Signatures? How do they act as a medium of trust between communicating parties? 15 5. (a) Differentiate between symmetric and asymmetric encryption approach. 6 (b) RSA Algorithm 9 Unit-III 6. What is SSL? Detail the events that are required for a successful SET transaction. 15 7. Explain the Secure HTTP protocol and how does it provide better security than HTTP? Also discuss the vital features of TSP. 15 Unit-IV 8. Describe in detail the Kerberos authentication service. Also highlight its chief drawbacks. 15 9. (a) Security Handshake Pitfalls 7 (b) Key Distribution Centre 8"
+  }
+]
