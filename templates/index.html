@@ -734,8 +734,9 @@
 
     <script>
         // ============= CONFIGURATION =============
-        const API_URL = 'http://localhost:5000/query';
-        // NOTE: Change to production URL when deploying to Render
+        const API_URL = window.location.hostname === 'localhost' 
+        ? 'http://localhost:5000/query'
+        : 'https://studenthelpless.onrender.com/query';
         
         // ============= DOM ELEMENTS =============
         const chatContainer = document.getElementById('chatContainer');
