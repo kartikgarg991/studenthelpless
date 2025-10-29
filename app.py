@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify , render_template
 import mysql.connector
 import json
 import google.generativeai as genai
