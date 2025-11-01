@@ -735,8 +735,8 @@
     <script>
         // ============= CONFIGURATION =============
         const API_URL = window.location.hostname === 'localhost' 
-        ? 'http://localhost:5000/query'
-        : 'https://studenthelpless.onrender.com/query';
+            ? 'http://localhost:5000/query'
+            : `${window.location.origin}/query`;
         
         // ============= DOM ELEMENTS =============
         const chatContainer = document.getElementById('chatContainer');
