@@ -573,31 +573,24 @@ def health():
 def home():
     return render_template('index.html')
 
+# ✅ FIX 1: Initialize cache when module loads (not just in __main__)
+print("\n" + "="*60)
+print("🚀 STUDENTHELPER BACKEND - INITIALIZING")
+print("="*60)
+initialize_cache()
 
+if SUBJECTS_CACHE:
+    print(f"📚 Sample subjects: {SUBJECTS_CACHE[:3]}")
+print("="*60 + "\n")
 
 # ============= MAIN =============
 if __name__ == '__main__':
+    # ✅ FIX 2: Use PORT environment variable from Render
+    port = int(os.getenv('PORT', 5000))
     
-    print("\n" + "="*60)
-    print("🚀 STUDENTHELPER BACKEND - OPTIMIZED VERSION")
-    print("="*60)
-    print("\n📌 Optimizations:")
-    print("   ✅ Cached subjects (no repeated DB calls)")
-    print("   ✅ Cached schema (faster SQL generation)")
-    print("   ✅ Rolling conversation queue (last 3 exchanges)")
-    print("   ✅ Context-aware responses")
-    print("   ✅ No memory leaks (fresh SQL chats)")
-    print("\n📌 Endpoints:")
-    print("   POST /query         - Intelligent query handler")
-    print("   GET  /health        - System health check")
-    print("   POST /clear-history - Clear conversation queue")
-    
-    # ✅ Initialize cache on startup
-    initialize_cache()
-    
-    if SUBJECTS_CACHE:
-        print(f"\n📚 Sample subjects: {SUBJECTS_CACHE[:3]}")
-    
-    print("\n" + "="*60 + "\n")
-    
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # ✅ FIX 3: Disable debug mode in production
+    print(f"🌐 Starting server on port {port}...")
+    app.run(debug=False, host='0.0.0.0', port=port)
+
+
+
