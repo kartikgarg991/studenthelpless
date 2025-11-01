@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify , render_template
+from flask import Flask, request, jsonify, render_template
 import mysql.connector
 import json
 import google.generativeai as genai
@@ -36,6 +36,7 @@ DB_CONFIG = {
 # ============= GLOBAL CACHE =============
 SUBJECTS_CACHE = []
 SCHEMA_CACHE = {}
+CACHE_INITIALIZED = False
 
 # ============= CONVERSATION QUEUE =============
 conversation_queue = []
@@ -81,7 +82,10 @@ def get_db_connection():
 # ============= CACHE INITIALIZATION =============
 def initialize_cache():
     """Load subjects and schema into memory on startup"""
-    global SUBJECTS_CACHE, SCHEMA_CACHE
+    global SUBJECTS_CACHE, SCHEMA_CACHE, CACHE_INITIALIZED
+    
+    if CACHE_INITIALIZED:
+        return
     
     print("\n🔄 Initializing cache...")
     
@@ -114,6 +118,7 @@ def initialize_cache():
         }
     }
     print(f"✅ Schema cached")
+    CACHE_INITIALIZED = True
 
 # ============= INTELLIGENT QUERY CLASSIFIER =============
 def classify_query_type(user_query):
@@ -427,6 +432,12 @@ Answer:"""
         print(f"❌ Formatting error: {e}")
         return json.dumps(raw_results)
 
+# ============= BEFORE REQUEST HOOK =============
+@app.before_request
+def check_cache():
+    if not CACHE_INITIALIZED:
+        initialize_cache()
+
 # ============= MAIN QUERY ENDPOINT =============
 @app.route('/query', methods=['POST'])
 def handle_query():
@@ -573,24 +584,9 @@ def health():
 def home():
     return render_template('index.html')
 
-# ✅ FIX 1: Initialize cache when module loads (not just in __main__)
-print("\n" + "="*60)
-print("🚀 STUDENTHELPER BACKEND - INITIALIZING")
-print("="*60)
-initialize_cache()
-
-if SUBJECTS_CACHE:
-    print(f"📚 Sample subjects: {SUBJECTS_CACHE[:3]}")
-print("="*60 + "\n")
 
 # ============= MAIN =============
 if __name__ == '__main__':
-    # ✅ FIX 2: Use PORT environment variable from Render
     port = int(os.getenv('PORT', 5000))
-    
-    # ✅ FIX 3: Disable debug mode in production
-    print(f"🌐 Starting server on port {port}...")
+    print(f"\n🌐 Starting server on port {port}...")
     app.run(debug=False, host='0.0.0.0', port=port)
-
-
-
