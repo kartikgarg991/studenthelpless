@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 
 
 </head>
+
 <body>
     <div class="mesh-background"></div>
     <div class="grid-overlay"></div>
@@ -20,7 +22,7 @@
             <div class="logo">
                 <div class="logo-icon">🎓</div>
                 <div class="logo-text">
-                    <h1>StudentHelpless</h1>
+                    <h1>StudentHelpdesk</h1>
                     <p>AI-Powered Academic Excellence</p>
                 </div>
             </div>
@@ -37,8 +39,9 @@
             <div class="empty-state" id="emptyState">
                 <div class="empty-state-icon">🚀</div>
                 <h2>Ready to Excel?</h2>
-                <p>Your intelligent study companion for exam mastery. Ask anything about syllabus, previous papers, or exam strategies!</p>
-                
+                <p>Your intelligent study companion for exam mastery. Ask anything about syllabus, previous papers, or
+                    exam strategies!</p>
+
                 <div class="quick-actions">
                     <div class="quick-action-card" data-query="Show me CSE syllabus">
                         <span class="icon">📚</span>
@@ -76,12 +79,8 @@
             </div>
 
             <div class="input-wrapper">
-                <input 
-                    type="text" 
-                    id="queryInput" 
-                    placeholder="Ask about syllabus, PYQs, exam patterns..."
-                    autocomplete="off"
-                >
+                <input type="text" id="queryInput" placeholder="Ask about syllabus, PYQs, exam patterns..."
+                    autocomplete="off">
                 <button id="sendBtn">
                     <span>Send</span>
                     <span>✨</span>
@@ -93,4 +92,5 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
+
 </html>
