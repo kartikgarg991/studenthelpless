@@ -84,6 +84,8 @@ def get_usage_summary(service_name):
 
 def get_all_usage_summary():
     return {
-        'gemini': get_usage_summary('gemini'),
+        'mistral': get_usage_summary('mistral'),
+        # Backwards-compat key for older UIs/assumptions.
+        'gemini': get_usage_summary('mistral'),
         'pinecone': get_usage_summary('pinecone'),
     }

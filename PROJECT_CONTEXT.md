@@ -46,7 +46,7 @@ studenthelpless/
     __init__.py
     cache_service.py
     db_fetch.py
-    gemini_client.py
+    mistral_client.py
     llm_service.py
     pinecone_service.py
     session_store.py
@@ -79,11 +79,12 @@ Loads environment variables using `python-dotenv`.
 
 Current values expected from `.env`:
 
-- `GEMINI_API_KEY`
+- `MISTRAL_API_KEY`
+- `MISTRAL_CHAT_MODEL` optional, defaults to `mistral-small-latest`
+- `MISTRAL_EMBEDDING_MODEL` optional, defaults to `mistral-embed`
+- `MISTRAL_EMBEDDING_DIMENSIONALITY` optional, defaults to `768` (match your Pinecone index)
 - `PINECONE_API_KEY`
 - `PINECONE_INDEX_NAME`
-- `GEMINI_EMBEDDING_MODEL` optional, defaults to `models/gemini-embedding-001`
-- `GEMINI_EMBEDDING_DIMENSIONALITY` optional, defaults to `768`
 - `REDIS_URL`
 - `SESSION_TTL_SECONDS` optional, defaults to `7200`
 - `MAX_HISTORY` optional, defaults to `3`
@@ -198,18 +199,16 @@ Current limitation:
 - It executes whatever SQL string Gemini generated.
 - No validation currently blocks writes, deletes, multi-statements, dangerous functions, or table access outside the expected schema.
 
-### `services/gemini_client.py`
+### `services/mistral_client.py`
 
-Configures Gemini:
+Wraps Mistral API calls:
 
-- `genai.configure(api_key=GEMINI_API_KEY)`
-- Creates `model = genai.GenerativeModel('models/gemini-2.5-flash')`
-
-This shared `model` is used by `llm_service.py`.
+- `chat_complete(prompt, system=None)` for chat completions
+- `embed_text(text)` for vector embeddings (used for Pinecone queries)
 
 ### `services/llm_service.py`
 
-Contains all Gemini prompt logic.
+Contains all LLM prompt logic (now using Mistral).
 
 Functions:
 
