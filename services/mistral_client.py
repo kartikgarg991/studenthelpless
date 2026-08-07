@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-from mistralai import Mistral
+from mistralai.client import Mistral
 
 from config import (
     MISTRAL_API_KEY,
