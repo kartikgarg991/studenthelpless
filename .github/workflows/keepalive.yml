@@ -1,0 +1,30 @@
+name: Keep Render warm
+
+on:
+  schedule:
+    # GitHub cron minimum is every 5 minutes
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Ping /ready
+        env:
+          KEEPALIVE_URL: ${{ secrets.KEEPALIVE_URL }}
+          KEEPALIVE_BASE_URL: ${{ secrets.KEEPALIVE_BASE_URL }}
+        run: |
+          if [ -n "$KEEPALIVE_URL" ]; then
+            URL="$KEEPALIVE_URL"
+          elif [ -n "$KEEPALIVE_BASE_URL" ]; then
+            URL="${KEEPALIVE_BASE_URL%/}/ready"
+          else
+            echo "Missing secret. Set either:"
+            echo "- KEEPALIVE_URL (example: https://YOUR-APP.onrender.com/ready)"
+            echo "- KEEPALIVE_BASE_URL (example: https://YOUR-APP.onrender.com)"
+            exit 1
+          fi
+          curl -fsS -m 20 "$URL"
+
