@@ -1,9 +1,9 @@
 import json
 
 from services.cache_service import get_schema_cache, get_subjects_cache
-from services.gemini_client import model
 from services.session_store import get_context_for_llm
 from services.usage_tracker import record_call
+from services.mistral_client import chat_complete
 
 
 def classify_query_type(user_query, session_id):
@@ -26,9 +26,8 @@ CLASSIFICATION RULES:
 Return ONLY one word: SQL, PINECONE, or INVALID"""
 
     try:
-        response = model.generate_content(prompt)
-        record_call('gemini', success=True)
-        result = response.text.strip().upper()
+        result = chat_complete(prompt).strip().upper()
+        record_call('mistral', success=True)
         if "INVALID" in result:
             classification = "INVALID"
         elif "SQL" in result:
@@ -38,7 +37,7 @@ Return ONLY one word: SQL, PINECONE, or INVALID"""
         print(f"🔍 Query classified as: {classification}")
         return classification
     except Exception as e:
-        record_call('gemini', success=False, error=e)
+        record_call('mistral', success=False, error=e)
         print(f"❌ Classification error: {e}")
         return "SQL"
 
@@ -58,16 +57,15 @@ CURRENT USER QUERY: "{user_query}"
 Return ONLY the subject name from the list, or NONE:"""
 
     try:
-        response = model.generate_content(prompt)
-        record_call('gemini', success=True)
-        subject = response.text.strip()
+        subject = chat_complete(prompt).strip()
+        record_call('mistral', success=True)
         if subject == "NONE" or subject not in available_subjects:
             print("📚 No valid subject detected in query")
             return None
         print(f"📚 Detected subject: {subject}")
         return subject
     except Exception as e:
-        record_call('gemini', success=False, error=e)
+        record_call('mistral', success=False, error=e)
         print(f"❌ Subject extraction error: {e}")
         return None
 
@@ -107,11 +105,11 @@ Be conversational and student-friendly (3-5 sentences). Always cite specific yea
 Generate your intelligent answer:"""
 
     try:
-        response = model.generate_content(prompt)
-        record_call('gemini', success=True)
-        return response.text.strip()
+        answer = chat_complete(prompt).strip()
+        record_call('mistral', success=True)
+        return answer
     except Exception as e:
-        record_call('gemini', success=False, error=e)
+        record_call('mistral', success=False, error=e)
         print(f"❌ LLM generation error: {e}")
         return "Error generating response. Please try again."
 
@@ -119,7 +117,6 @@ Generate your intelligent answer:"""
 def generate_sql_query(user_query, session_id):
     schema = get_schema_cache()
     context = get_context_for_llm(session_id)
-    fresh_chat = model.start_chat()
     system_instruction = f"""You are an intelligent SQL generator.
 
 {context}
@@ -131,13 +128,13 @@ CURRENT USER QUERY: {user_query}
 SQL:"""
 
     try:
-        response = fresh_chat.send_message(system_instruction)
-        record_call('gemini', success=True)
-        sql = response.text.strip().replace('```sql', '').replace('```', '').strip()
+        response_text = chat_complete(system_instruction)
+        record_call('mistral', success=True)
+        sql = response_text.strip().replace('```sql', '').replace('```', '').strip()
         print(f"📝 Generated SQL: {sql}")
         return sql
     except Exception as e:
-        record_call('gemini', success=False, error=e)
+        record_call('mistral', success=False, error=e)
         print(f"❌ SQL generation error: {e}")
         return None
 
@@ -165,10 +162,10 @@ STRICT RULES:
 
 Answer:"""
     try:
-        response = model.generate_content(prompt)
-        record_call('gemini', success=True)
-        return response.text.strip()
+        answer = chat_complete(prompt).strip()
+        record_call('mistral', success=True)
+        return answer
     except Exception as e:
-        record_call('gemini', success=False, error=e)
+        record_call('mistral', success=False, error=e)
         print(f"❌ Formatting error: {e}")
         return json.dumps(raw_results)

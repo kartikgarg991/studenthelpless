@@ -28,7 +28,7 @@ def health():
         'services': {
             'database': db_status,
             'pinecone': _tracked_status(usage['pinecone']),
-            'gemini': _tracked_status(usage['gemini'])
+            'mistral': _tracked_status(usage['mistral'])
         },
         'cache_stats': {
             'subjects_cached': len(get_subjects_cache()),
