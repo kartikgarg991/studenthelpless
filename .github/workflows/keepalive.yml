@@ -9,7 +9,7 @@ on:
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 5
     steps:
       - name: Ping /ready
         env:
@@ -26,5 +26,11 @@ jobs:
             echo "- KEEPALIVE_BASE_URL (example: https://YOUR-APP.onrender.com)"
             exit 1
           fi
-          curl -fsS -m 20 "$URL"
+          curl -fLsS \
+            --connect-timeout 30 \
+            --max-time 180 \
+            --retry 2 \
+            --retry-delay 5 \
+            --retry-all-errors \
+            "$URL"
 
